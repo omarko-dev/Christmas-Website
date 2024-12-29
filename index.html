@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Cheer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Merry Christmas!</h1>
+  </header>
+
+  <main>
+    <!-- Countdown Section -->
+    <section id="countdown">
+      <h2>🎄 Days Until Christmas 🎄</h2>
+      <div id="countdown-timer"></div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section id="buttons">
+      <button onclick="openModal('giftModal')">🎁 Gift Ideas</button>
+      <button onclick="openModal('contactModal')">🎅 Contact Santa</button>
+      <button onclick="openModal('listModal')">🎄 Naughty or Good List</button>
+    </section>
+
+    <!-- Gift Ideas Modal -->
+    <div class="modal" id="giftModal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal('giftModal')">✖</button>
+        <h2>🎁 Gift Ideas</h2>
+        <ul>
+          <li>🎄 A cozy blanket</li>
+          <li>🎁 Christmas-themed mugs</li>
+          <li>❄️ A box of chocolates</li>
+          <li>🌟 Handmade crafts</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Santa Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal('contactModal')">&times;</button>
+      <h2>Contact Santa 🎅</h2>
+      <p>Write your message to Santa:</p>
+      <textarea id="santaMessage" placeholder="Dear Santa, I have been..."></textarea>
+      <button onclick="sendMessage()">Send Message</button>
+      <p id="santaResponse"></p>
+    </div>
+  </div>  
+
+    <!-- Naughty or Good List Modal -->
+    <div class="modal" id="listModal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal('listModal')">✖</button>
+        <h2>🎄 Naughty or Good List</h2>
+        <p>Enter your name to find out:</p>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="checkList()">Check</button>
+        <p id="result"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Spread the holiday cheer! 🌟</p>
+  </footer>
+  <img src="christmas-tree.png" alt="Christmas Tree" id="christmas-tree">
+  <script src="script.js"></script>
+</body>
+</html>

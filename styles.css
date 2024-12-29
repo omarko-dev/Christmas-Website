@@ -1,0 +1,197 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f7f4ea;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d92027;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+#countdown {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#countdown h2 {
+    font-size: 1.8em;
+}
+
+#countdown-timer {
+    font-size: 5em;
+    color: #d92027;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#buttons {
+    margin: 30px 0;
+}
+
+#buttons button {
+    background-color: #9dd9d2;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#buttons button:hover {
+    transform: scale(1.1);
+    background-color: #79bfb1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    animation: slideIn 0.5s ease-out;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content button {
+    margin-top: 10px;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#listModal input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 1.2em;
+    border: 2px solid #d92027;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#listModal input[type="text"]:focus {
+    border-color: #79bfb1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#listModal button {
+    background-color: #79bfb1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#listModal button:hover {
+    background-color: #9dd9d2;
+}
+
+#listModal #result {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+#contactModal textarea {
+    width: 80%;
+    height: 100px;
+    padding: 12px;
+    font-size: 1.2em;
+    border: 2px solid #d92027;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    resize: none;
+}
+
+#contactModal textarea:focus {
+    border-color: #79bfb1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#contactModal button {
+    background-color: #79bfb1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactModal button:hover {
+    background-color: #9dd9d2;
+}
+
+#contactModal #santaResponse {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: green;
+}
+
+footer {
+    background-color: #d92027;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+#christmas-tree {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
